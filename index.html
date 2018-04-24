@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Shweta</title>
+<title>Shweta</title>
+<link rel="manifest" href="/manifest.json">
+<script>
+	clevertap.notifications.push({
+    "titleText":'Would you like to receive Push Notifications?',
+    "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
+    "okButtonText":'Sign me up!',
+    "rejectButtonText":'No thanks',
+    "okButtonColor":'#f28046'});
+    clevertap.notifications.push({
+    "titleText":popupTitleText,
+    "bodyText":popupBodyText,
+    "okButtonText":okButtonText,
+    "rejectButtonText":rejectButtonText,
+    "okButtonColor":okButtonColorInHex});
+</script>
 </head>
 <body>
 <h1> Hello World</h1>
-<p>hosting github</p>
+<p> hosting github</p>
 </body>
 </html>
